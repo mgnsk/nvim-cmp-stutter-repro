@@ -35,6 +35,7 @@ require("lazy").setup({
     },
     {
         "hrsh7th/nvim-cmp",
+        commit = "09ff53f",
         dependencies = {
             "hrsh7th/cmp-nvim-lsp",
         },
