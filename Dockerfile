@@ -30,6 +30,7 @@ RUN mkdir -p /home/${user}/.config/nvim \
 	/home/${user}/.local/share/nvim/lazy \
 	/home/${user}/workspace
 
-WORKDIR /home/${user}/workspace
+WORKDIR /home/${user}/workspace/grpc-go
 
-RUN git clone --depth=1 https://github.com/grpc/grpc-go.git
+RUN git clone --depth=1 https://github.com/grpc/grpc-go.git .
+RUN go mod download
